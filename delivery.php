@@ -80,8 +80,7 @@ if(Mage::getSingleton('admin/session')->isLoggedIn()){
         </table>
         <script>
             $(document).ready(function(){
-                var $table = $('#delivery-table');
-                $table.floatThead();
+                $('#delivery-table').floatThead();
                 $('span.price-editable').each(function(){
                     $(this).click(function(){
                         $(this).hide();
